@@ -1,0 +1,22 @@
+1.vpc endpoints:A VPC (Virtual Private Cloud) endpoint is a connection between a VPC and another AWS service that allows traffic to flow securely between them without using an Internet gateway, NAT device, VPN connection, or a Direct Connect connection.
+Interface endpoints are used to connect to AWS services that are accessed over the internet through an endpoint that is attached to a network interface in your VPC.
+Gateway endpoints are used to connect to AWS services that support gateway VPC endpoints, such as Amazon S3 and DynamoDB.
+2.
+Amazon EC2 is a web service that enables customers to launch and manage virtual machine instances in the cloud, providing scalable computing capacity for a wide range of applications and workloads.
+3.With SSH, you can establish a secure, encrypted connection between your local computer and a remote server or device. 
+
+4.AWS Placement Groups is a feature that allows you to control the placement of EC2 instances within the underlying infrastructure. With Placement Groups, you can group instances into a logical cluster that is placed in a specific part of the AWS infrastructure. This can improve network performance, reduce latency, and provide other benefits.
+
+There are three types of Placement Groups:
+
+Cluster Placement Group: This type of Placement Group is designed for applications that require low network latency, high network throughput, or both. Instances in a Cluster Placement Group are placed in close proximity to each other, which reduces the distance that network traffic has to travel.
+
+Spread Placement Group: This type of Placement Group is designed for applications that have a small number of critical instances that should be kept separate from each other. Instances in a Spread Placement Group are placed on distinct underlying hardware, which reduces the risk of simultaneous failure.
+
+Partition Placement Group: This type of Placement Group is designed for distributed and HPC (high-performance computing) applications that require partitioning of instances across groups of racks. Each partition acts as a logical unit with its own network and storage resources.
+
+Placement Groups are free to create, but they have some limitations. For example, you cannot change the type of Placement Group once it has been created, and there are restrictions on the number of instances that can be placed in a Placement Group. It is important to consider these limitations when deciding whether to use Placement Groups in your AWS deployment.
+5.Cross-region replication is the process of replicating objects from a source S3 bucket located in one AWS region to a destination S3 bucket located in a different AWS region.
+
+
+
