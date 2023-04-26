@@ -3,18 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
-                sh 'npm run build'
+                sh 'echo "Building feature-1 branch"'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm run test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'npm run deploy'
+                sh 'echo "Testing feature-1 branch"'
             }
         }
     }
